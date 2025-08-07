@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIFA TRADERS - PDF Downloads</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('your-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f1f1f1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .left {
+      width: 50%;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left h1 {
+      font-family: Bauhaus;
+      font-size: 60px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .left h3 {
+      color: gray;
+      font-size: 22px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .left p {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+
+    .contact-info strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .right {
+      width: 50%;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .pdf-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .pdf-box {
+      width: 150px;
+      height: 150px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #ffffff30;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+      transition: 0.3s;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .pdf-box:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: scale(1.05);
+    }
+
+    .pdf-box img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-bottom: 2px solid #ffffff30;
+    }
+
+    .pdf-box span {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    /* ✅ Responsive Styles */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left, .right {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .left h1 {
+        font-size: 36px;
+      }
+
+      .left p, .contact-info {
+        margin: 0 auto;
+      }
+
+      .pdf-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pdf-box {
+        width: 100%;
+        height: auto;
+      }
+
+      .pdf-box img {
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left">
+    <h1>RIFA TRADERS</h1>
+    <h3>Premium Household Product Suppliers</h3>
+    <p>
+      We are committed to delivering durable, eco-friendly, and high-quality plastic household products at affordable rates. Our catalog includes a wide variety of containers, cookware, and storage solutions trusted by thousands.
+    </p>
+
+    <div class="contact-info">
+      <strong>📞 Contact:</strong> +91 9447640057<br />
+      <strong>📍 Location:</strong> Thamarassery, Kozhikode, Kerala, India<br />
+      <strong>🕒 Timings:</strong> Mon - Sat, 9:00 AM - 7:00 PM<br />
+      <strong>📧 Email:</strong> info@rifatraders.com
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>Download Brochures</h2>
+    <div class="pdf-grid">
+      <a class="pdf-box" href="pdf1.pdf" download>
+        <img src="img1.jpg" alt="POLYSET" />
+        <span>POLYSET</span>
+      </a>
+      <a class="pdf-box" href="pdf2.pdf" download>
+        <img src="img2.jpg" alt="GOODAY" />
+        <span>GOODAY</span>
+      </a>
+      <a class="pdf-box" href="pdf3.pdf" download>
+        <img src="img3.jpg" alt="V COOKWARE" />
+        <span>V KUKWARE</span>
+      </a>
+      <a class="pdf-box" href="pdf4.pdf" download>
+        <img src="img4.jpg" alt="MOWA" />
+        <span>MOWA</span>
+      </a>
+      <a class="pdf-box" href="pdf5.pdf" download>
+        <img src="img5.jpg" alt="GEM" />
+        <span>GEM</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
